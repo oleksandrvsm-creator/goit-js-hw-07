@@ -1,0 +1,243 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: Montserrat, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  color: #2e2f42;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #4e75ff;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #6c8cff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  min-width: 86px;
+  height: 40px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 200ms ease;
+}
+
+button:hover,
+button:focus {
+  background-color: #6c8cff;
+}
+
+input {
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  color: #2e2f42;
+  outline: transparent;
+  transition: border-color 200ms ease;
+}
+
+input:hover {
+  border-color: #000000;
+}
+
+input:focus {
+  border-color: #4e75ff;
+}
+
+body > p:first-of-type {
+  margin-bottom: 24px;
+}
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: min(392px, 100%);
+}
+
+#categories .item {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+}
+
+#categories h2 {
+  margin: 0 0 16px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+
+#categories .item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#categories .item ul li {
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1128px;
+}
+
+.gallery li {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#name-input {
+  display: block;
+  width: min(360px, 100%);
+  margin-bottom: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: min(360px, 100%);
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #2e2f42;
+  letter-spacing: 0.04em;
+}
+
+.login-form button {
+  align-self: flex-start;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: min(345px, 100%);
+}
+
+.widget p {
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+.color {
+  font-weight: 600;
+}
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 16px;
+  padding: 32px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+}
+
+#controls input {
+  width: 150px;
+}
+
+#controls button[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+#controls button[data-destroy]:hover,
+#controls button[data-destroy]:focus {
+  background-color: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding: 20px;
+  }
+
+  .gallery {
+    gap: 16px;
+  }
+
+  .gallery li {
+    flex-basis: 100%;
+  }
+
+  #controls {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #controls input {
+    width: 100%;
+  }
+}
